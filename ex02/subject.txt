@@ -1,0 +1,26 @@
+Exercício: Sistema de Biblioteca
+Você foi designado para criar um sistema de gerenciamento de uma biblioteca.
+
+Crie uma classe abstrata chamada ItemBiblioteca que tenha os seguintes atributos e métodos:
+
+String titulo: título do item.
+boolean isEmprestado: estado de empréstimo do item (se está emprestado ou não).
+Método abstrato void emprestar(): para emprestar o item.
+Método abstrato void devolver(): para devolver o item.
+Método concreto void mostrarDetalhes(): que exibe o título e o estado de empréstimo.
+Crie uma interface chamada Reservavel com os métodos:
+
+void reservar(): para reservar o item.
+void cancelarReserva(): para cancelar a reserva.
+Crie as seguintes classes que estendem ItemBiblioteca:
+
+Livro: Implementa também a interface Reservavel.
+Revista: Não implementa a interface Reservavel.
+Cada classe deve implementar os métodos emprestar() e devolver() de maneira diferente, dependendo das regras de empréstimo para livros e revistas.
+
+No método main(), crie uma lista de itens da biblioteca, misturando livros e revistas, e simule operações como empréstimo, devolução e reserva para os itens apropriados.
+
+Objetivos:
+Use herança e polimorfismo para tratar diferentes tipos de itens de biblioteca de forma uniforme.
+Adicione a capacidade de reservar apenas itens que implementam a interface Reservavel.
+Utilize uma estrutura de dados como ArrayList para armazenar e gerenciar os itens da biblioteca.

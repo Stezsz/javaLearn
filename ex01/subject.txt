@@ -1,0 +1,22 @@
+Exercício: Sistema de Transporte
+Imagine que você está criando um sistema para gerenciar diferentes tipos de veículos em uma frota de transporte.
+
+Crie uma classe abstrata chamada Transporte que tenha os métodos:
+
+iniciarViagem(): um método abstrato para iniciar a viagem do transporte.
+pararViagem(): um método concreto que imprime "Viagem parada".
+Crie uma interface chamada VeiculoMotorizado que tenha o método:
+
+abastecer(): para veículos que precisam de combustível.
+Crie as seguintes classes que estendem Transporte:
+
+Ônibus: Implementa a interface VeiculoMotorizado.
+Bicicleta: Não implementa VeiculoMotorizado.
+Cada classe deve implementar o método iniciarViagem() de maneira diferente (por exemplo, um ônibus pode "arrancar", enquanto a bicicleta "começa a pedalar").
+
+No método main(), crie uma lista de diferentes tipos de transporte (ônibus e bicicletas) e simule uma viagem para cada um deles, usando um laço para iterar pela lista.
+
+Objetivos:
+Use herança e polimorfismo para tratar diferentes tipos de transporte de maneira uniforme.
+Adicione um veículo motorizado (ônibus) e não motorizado (bicicleta).
+Utilize um loop para gerenciar as viagens de cada veículo.
